@@ -43,7 +43,7 @@ class AIBuddyBillingAccountService:
         return GetAIBuddyBillingAccountDetail.model_validate(account)
 
     @staticmethod
-    async def build_balance_guard(*, ctx: CapabilityContext) -> CapabilityResult:
+    async def build_balance_guard(ctx: CapabilityContext) -> CapabilityResult:
         """
         构建余额不足校验能力
 

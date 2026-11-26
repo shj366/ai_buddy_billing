@@ -120,7 +120,7 @@ class AIBuddyBillingBudgetService:
         return count
 
     @staticmethod
-    async def build_spend_limits(*, ctx: CapabilityContext) -> CapabilityResult:
+    async def build_spend_limits(ctx: CapabilityContext) -> CapabilityResult:
         """
         构建用户预算对应的 Harness SpendLimits
 
